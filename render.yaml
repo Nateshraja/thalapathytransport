@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: thalapathytransport
+    env: python
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: "gunicorn thalapathi_transport.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: thalapathi_transport.settings
+      - key: PYTHON_VERSION
+        value: 3.11

@@ -1,3 +1,4 @@
+from email.mime import message
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Trip, MyCompany
 from .forms import TripForm
@@ -5,7 +6,7 @@ from django.http import HttpResponse
 from django.template.loader import get_template
 from xhtml2pdf import pisa
 from django.contrib.auth.decorators import login_required, user_passes_test
-import pywhatkit as kit
+#import pywhatkit as kit
 import os
 from django.conf import settings
 from pdf2image import convert_from_path
@@ -82,12 +83,9 @@ def send_whatsapp(request, pk):
     )
     print(f"WhatsApp message: {message}")
     try:
-        kit.sendwhatmsg_instantly(
-            phone_no=phone_number,
-            message=message,
-            wait_time=15,
-            tab_close=True
-        )
-        return HttpResponse("WhatsApp message sent successfully!")
+        message = "Here is your invoice link"
+        phone = "+919566907059"
+        wa_url = f"https://wa.me/{phone}?text={message}"
+        return redirect(wa_url)
     except Exception as e:
         return HttpResponse(f"Error sending WhatsApp message: {e}")

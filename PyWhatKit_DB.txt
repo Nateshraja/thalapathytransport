@@ -1,0 +1,25 @@
+Date: 24/6/2025
+Time: 10:21
+Phone Number: +919566907059
+Message: Hello Sunwin Package,Your trip invoice dated 2025-06-23 is ready.Download: http://127.0.0.1:8000/trips/4/pdf/Pay via UPI: thalapathi@upi
+--------------------
+Date: 24/6/2025
+Time: 10:23
+Phone Number: +919566907059
+Message: Hello Sunwin Package,Your trip invoice dated 2025-06-23 is ready.Download Invoice: http://127.0.0.1:8000/trips/4/pdf/Pay via UPI: thalapathi@upiThank you - Thalapathi Transport
+--------------------
+Date: 24/6/2025
+Time: 10:24
+Phone Number: +919566907059
+Message: Hello Sunwin Package,Your trip invoice dated 2025-06-23 is ready.Download Invoice: http://127.0.0.1:8000/trips/4/pdf/Pay via UPI: thalapathi@upiThank you - Thalapathi Transport
+--------------------
+Date: 24/6/2025
+Time: 10:35
+Phone Number: +919566907059
+Message: Hello Sunwin Package,Your trip invoice dated 2025-06-23 is ready.Download Invoice: http://localhost:8000/trips/4/pdf/Pay via UPI: thalapathi@upiThank you - Thalapathi Transport
+--------------------
+Date: 24/6/2025
+Time: 10:37
+Phone Number: +919566907059
+Message: Hello Sunwin Package,Your trip invoice dated 2025-06-23 is ready.Download Invoice: http://localhost:8000/trips/4/pdf/Pay via UPI: thalapathi@upiThank you - Thalapathi Transport
+--------------------

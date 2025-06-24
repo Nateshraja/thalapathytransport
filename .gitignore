@@ -1,0 +1,14 @@
+# Ignore Python virtual environments
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore static/media files generated
+/media/
+/staticfiles/
+
+/*.log

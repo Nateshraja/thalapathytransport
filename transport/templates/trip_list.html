@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Trip List</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="table-primary">
+            <tr>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Pickup</th>
+                <th>Drop</th>
+                <th>Vehicle</th>
+                <th>Load Type</th>
+                <th>Total Cost</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for trip in trips %}
+            <tr>
+                <td>{{ trip.date }}</td>
+                <td>{{ trip.company_name }}</td>
+                <td>{{ trip.pickup_location }}</td>
+                <td>{{ trip.drop_location }}</td>
+                <td>{{ trip.vehicle_number }}</td>
+                <td>{{ trip.load_type }}</td>
+                <td>₹{{ trip.total_cost }}</td>
+                <td>
+                    <a href="{% url 'trip_pdf' trip.id %}" class="btn btn-outline-secondary btn-sm" target="_blank">
+                        🖨 Print
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

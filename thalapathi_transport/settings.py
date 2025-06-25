@@ -33,8 +33,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.middleware.security.SecurityMiddleware',    
+    
+    'django.middleware.security.SecurityMiddleware',   
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -130,7 +131,7 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://thalapathytransport.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://thalapathytransport.onrender.com/']
 
 JAZZMIN_SETTINGS = {
     "site_title": "Thalapathi Transport Admin",
